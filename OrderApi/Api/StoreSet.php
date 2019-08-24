@@ -2,8 +2,14 @@
 /**
  * 默认接口服务类
  *
- * @author: dogstar <chanzonghuang@gmail.com> 2014-10-04
+ * @author:
  */
+
+header("Access-Control-Allow-Origin:*");
+
+header('Access-Control-Allow-Methods:POST');
+
+header('Access-Control-Allow-Headers:x-requested-with, content-type');
 
 class Api_StoreSet extends PhalApi_Api {
 

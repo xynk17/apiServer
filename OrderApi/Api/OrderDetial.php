@@ -3,8 +3,13 @@
 /**
  * 默认接口服务类
  *
- * @author: dogstar <chanzonghuang@gmail.com> 2014-10-04
+ * @author:
  */
+header("Access-Control-Allow-Origin:*");
+
+header('Access-Control-Allow-Methods:POST');
+
+header('Access-Control-Allow-Headers:x-requested-with, content-type');
 class Api_OrderDetial extends PhalApi_Api
 {
 
@@ -27,7 +32,8 @@ class Api_OrderDetial extends PhalApi_Api
      */
     public function index()
     {
-        http://localhost:8888/phalapirrelease/Public/Orderapi/?service=OrderDetial.index&store_id=3&order_id=21
+        //http://localhost:8888/phalapirrelease/Public/Orderapi/?service=OrderDetial.index&store_id=3&order_id=21
+        //http://118.27.37.30:90/orderapi/?service=OrderDetial.index&store_id=3&order_id=21
         $result = array();
         $result["money_sum"] = 0;
         //$result["goods"] = array();
